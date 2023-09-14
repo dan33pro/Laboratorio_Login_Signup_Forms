@@ -10,6 +10,5 @@ public class SignupFormActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup_form);
-        getSupportActionBar().setTitle("Signup Form");
     }
 }
