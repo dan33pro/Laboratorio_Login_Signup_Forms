@@ -9,129 +9,282 @@
     android:padding="30dp"
     tools:context=".SignupFormActivity">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="30dp">
+        android:layout_height="match_parent">
 
-        <com.google.android.material.textfield.TextInputLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:focusable="true"
-            android:focusableInTouchMode="true"
-            android:textColorHint="@color/colorAccent">
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="30dp">
 
-            <EditText
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Enter Full Name"
-                android:inputType="text"
-                android:textSize="20sp" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/colorAccent">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:focusable="true"
-            android:focusableInTouchMode="true"
-            android:textColorHint="@color/colorAccent">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Ingrese el Nombre Completo"
+                    android:inputType="text"/>
 
-            <EditText
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Enter User Name"
-                android:inputType="text"
-                android:textSize="20sp" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/colorAccent">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:focusable="true"
-            android:focusableInTouchMode="true"
-            android:textColorHint="@color/colorAccent">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Ingrese el Nombre Usuario"
+                    android:inputType="text"/>
 
-            <EditText
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Enter eMail"
-                android:inputType="text"
-                android:textSize="20sp" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/colorAccent">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:focusable="true"
-            android:focusableInTouchMode="true"
-            android:textColorHint="@color/colorAccent">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Ingrese el eMail"
+                    android:inputType="text"/>
 
-            <EditText
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Enter Password"
-                android:inputType="textPassword"
-                android:textSize="20sp" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/colorAccent">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:focusable="true"
-            android:focusableInTouchMode="true"
-            android:textColorHint="@color/colorAccent">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Ingrese la Contraseña"
+                    android:inputType="textPassword" />
 
-            <EditText
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Enter Confirm Password"
-                android:inputType="text"
-                android:textSize="20sp" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/colorAccent">
 
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Confirme la Contraseña"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/colorAccent" >
+
+                <EditText
+                    android:id="@+id/bornDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Fecha de nacimiento"
+                    android:ems="10"
+                    android:inputType="date"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayout2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:textColorHint="@color/colorAccent"
+                        app:layout_constraintEnd_toStartOf="@+id/textInputLayout5"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <EditText
+                            android:id="@+id/tvLatitud"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:inputType="text"
+                            android:hint="Latitud"
+                            android:maxLines="1" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayout5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:textColorHint="@color/colorAccent"
+                        app:layout_constraintEnd_toStartOf="@+id/textInputLayout4"
+                        app:layout_constraintStart_toEndOf="@+id/textInputLayout2">
+
+                        <EditText
+                            android:id="@+id/tvLongitud"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:inputType="text"
+                            android:hint="Longitud"
+                            android:maxLines="1" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayout4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:textColorHint="@color/colorAccent"
+                        app:layout_constraintEnd_toStartOf="@+id/textInputLayout3"
+                        app:layout_constraintStart_toEndOf="@+id/textInputLayout5">
+
+                        <EditText
+                            android:id="@+id/tvAltura"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:inputType="text"
+                            android:hint="Altura"
+                            android:maxLines="1" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayout3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:textColorHint="@color/colorAccent"
+                        app:layout_constraintStart_toEndOf="@+id/textInputLayout4"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                        <EditText
+                            android:id="@+id/tvPrecision"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:inputType="text"
+                            android:hint="Precisión"
+                            android:maxLines="1" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Gender: "
-                android:textSize="20sp" />
+                android:layout_marginTop="20dp"
+                android:text="Elija un Rol: "
+                android:textSize="15sp" />
 
-            <RadioButton
+            <com.google.android.material.appbar.MaterialToolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+                <Spinner
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:entries="@array/Roles"
+                    />
+            </com.google.android.material.appbar.MaterialToolbar>
+
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="Male"
-                android:textSize="20sp" />
+                android:layout_marginTop="20dp"
+                android:text="Genero: "
+                android:textSize="15sp" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
+            <RadioGroup
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="Female"
-                android:textSize="20sp" />
-        </RadioGroup>
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginTop="40dp"
-            android:backgroundTint="@color/colorAccent"
-            android:text="Register"
-            android:textColor="#FFFFFF"
-            android:textSize="22sp" />
-    </LinearLayout>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="M"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="F"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="No B"
+                    android:textSize="15sp" />
+            </RadioGroup>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="@color/colorAccent"
+                android:text="Register"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,73 +8,76 @@
     android:padding="30dp"
     tools:context=".LoginFormActivity">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="30dp">
+        android:layout_height="match_parent">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:src="@drawable/login_image"
-            android:padding="30dp"
-            />
-
-        <com.google.android.material.textfield.TextInputLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:focusable="true"
-            android:focusableInTouchMode="true"
-            android:textColorHint="@color/colorAccent"
-            >
-            <EditText
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="30dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/login_image"
+                android:padding="30dp"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="eMail"
-                android:ems="10"
-                android:inputType="text"
-                android:textSize="20sp"
-                />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/colorAccent"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Usuario"
+                    android:ems="10"
+                    android:inputType="text"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:focusable="true"
-            android:focusableInTouchMode="true"
-            android:textColorHint="@color/colorAccent">
-            <EditText
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Password"
-                android:ems="10"
-                android:inputType="textPassword"
-                android:textSize="20sp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/colorAccent">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contraseña"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Inisiar Sesión"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/colorAccent"
                 />
-        </com.google.android.material.textfield.TextInputLayout>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:text="Login"
-            android:textSize="22sp"
-            android:textColor="#FFFFFF"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="@color/colorAccent"
-            />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Registrar"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/colorAccent"
+                android:onClick="btn_signupForm"
+                />
+        </LinearLayout>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:text="Register"
-            android:textSize="22sp"
-            android:textColor="#FFFFFF"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="@color/colorAccent"
-            android:onClick="btn_signupForm"
-            />
-    </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

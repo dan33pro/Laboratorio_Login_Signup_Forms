@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Lab Login-Signup</string>
+    <string-array name="Roles">
+        <item>Ciudadano</item>
+        <item>Responsable de ingresar estadísticas</item>
+        <item>Responsable de toma de decisiones</item>
+    </string-array>
 </resources>
