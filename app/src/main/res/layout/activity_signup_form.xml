@@ -20,6 +20,7 @@
             tools:layout_editor_absoluteX="30dp">
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editText_full_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:focusable="true"
@@ -36,6 +37,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editText_username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:focusable="true"
@@ -52,6 +54,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editText_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:focusable="true"
@@ -68,6 +71,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editText_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:focusable="true"
@@ -84,6 +88,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editText_password_check"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:focusable="true"
@@ -100,6 +105,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editText_born_date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:focusable="true"
@@ -129,13 +135,13 @@
                     android:layout_height="wrap_content">
 
                     <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/textInputLayout2"
+                        android:id="@+id/editText_latitude"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:focusable="true"
                         android:focusableInTouchMode="true"
                         android:textColorHint="@color/colorAccent"
-                        app:layout_constraintEnd_toStartOf="@+id/textInputLayout5"
+                        app:layout_constraintEnd_toStartOf="@+id/editText_length"
                         app:layout_constraintStart_toStartOf="parent">
 
                         <EditText
@@ -151,14 +157,14 @@
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/textInputLayout5"
+                        android:id="@+id/editText_length"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:focusable="true"
                         android:focusableInTouchMode="true"
                         android:textColorHint="@color/colorAccent"
-                        app:layout_constraintEnd_toStartOf="@+id/textInputLayout4"
-                        app:layout_constraintStart_toEndOf="@+id/textInputLayout2">
+                        app:layout_constraintEnd_toStartOf="@+id/editText_altitude"
+                        app:layout_constraintStart_toEndOf="@+id/editText_latitude">
 
                         <EditText
                             android:id="@+id/tvLongitud"
@@ -173,14 +179,14 @@
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/textInputLayout4"
+                        android:id="@+id/editText_altitude"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:focusable="true"
                         android:focusableInTouchMode="true"
                         android:textColorHint="@color/colorAccent"
-                        app:layout_constraintEnd_toStartOf="@+id/textInputLayout3"
-                        app:layout_constraintStart_toEndOf="@+id/textInputLayout5">
+                        app:layout_constraintEnd_toStartOf="@+id/editText_precision"
+                        app:layout_constraintStart_toEndOf="@+id/editText_length">
 
                         <EditText
                             android:id="@+id/tvAltura"
@@ -195,13 +201,13 @@
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/textInputLayout3"
+                        android:id="@+id/editText_precision"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:focusable="true"
                         android:focusableInTouchMode="true"
                         android:textColorHint="@color/colorAccent"
-                        app:layout_constraintStart_toEndOf="@+id/textInputLayout4"
+                        app:layout_constraintStart_toEndOf="@+id/editText_altitude"
                         app:layout_constraintEnd_toEndOf="parent">
 
                         <EditText
@@ -231,6 +237,7 @@
                 android:focusable="true"
                 android:focusableInTouchMode="true" >
                 <Spinner
+                    android:id="@+id/spinner_rol"
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -248,12 +255,14 @@
                 android:textSize="15sp" />
 
             <RadioGroup
+                android:id="@+id/radioGroup_gender"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:orientation="horizontal">
 
                 <RadioButton
+                    android:id="@+id/radioButton_male"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -261,6 +270,7 @@
                     android:textSize="15sp" />
 
                 <RadioButton
+                    android:id="@+id/radioButton_female"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -268,6 +278,7 @@
                     android:textSize="15sp" />
 
                 <RadioButton
+                    android:id="@+id/radioButton_no_binary"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -276,11 +287,22 @@
             </RadioGroup>
 
             <Button
+                android:id="@+id/button_register"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="40dp"
                 android:backgroundTint="@color/colorAccent"
                 android:text="Register"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/button_show_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/colorAccent"
+                android:text="Show users"
                 android:textColor="#FFFFFF"
                 android:textSize="22sp" />
         </LinearLayout>
